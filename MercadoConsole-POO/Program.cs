@@ -14,7 +14,7 @@ while (continuar)
     Console.WriteLine("5. Sair");
     Console.WriteLine("Opção: ");
 
-    string opcao  = Console.ReadLine();
+    string opcao = Console.ReadLine();
 
     switch (opcao)
     {
@@ -36,5 +36,11 @@ while (continuar)
         default:
             Console.WriteLine("Opção inválida! Tente novamente.");
             break;
+    }
+
+    if (continuar)
+    {
+        Console.WriteLine("\nPressione quaqluer tecla para continuar");
+        Console.ReadKey();
     }
 }
